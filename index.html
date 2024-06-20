@@ -1,0 +1,174 @@
+<html>
+<title>Caratula</title>
+<center><table border="0" width="900">
+
+<tr>
+<td colspan="3"><head><center><img src="encabezado.png" widht="90" height="145"></center></head></td>
+</tr>
+
+<tr>
+<td colspan="3"><center><img src="pagina.gif" widht="50" height="200"></center></td>
+</tr>
+
+<tr>
+<td>06/03/2024</td>
+</tr>
+
+<tr>
+<td rowspan="7"><center><a href="https://cecytem.edomex.gob.mx/acerca_del_cecytem"><img src="CECYC.png" widht="40" height="60"></center>
+<br>
+<center><a href="https://cecytem.edomex.gob.mx/mision_vision_objetivos"><center><img src="misc.png" widht="40" height="60"></center>
+<br>
+<center><a href="https://cecytem.edomex.gob.mx/mision_vision_objetivos"><center><img src="vi.png" widht="40" height="60"></center>
+<br>
+<center><a href="https://cecytem.edomex.gob.mx/historia"><center><img src="HS.png" widht="40" height="60"></center>
+<br>
+<center><a href="organigrama.html"><center><img src="R.png" widht="40" height="60"></center>
+<br>
+<center><a href="https://cecytem.edomex.gob.mx/ubicacion"><center><img src="MA.png" widht="40" height="60"></center></td>
+
+
+
+<td><center><font face="Baskerville Old Face" size="5">Colegio De Estudios Científicos Y Tecnológicos Del Estado De México Plantel Ixtlahuaca</font face> <br><br> <font face="Baskerville Old Face">CECYTEM <br><br><font color="blue"> Módulo III:</font color> Desarrolla aplicaciones web <br><br><font color="blue"> Submódulo II:</font color> Desarrolla aplicaciones web que se ejecutan en el cliente <br><br> <font color="blue"> Submódulo III:</font color>Desarrolla aplicaciones web que se ejecutan en el servidor <br><br> <font color="blue"> Portafolio de evidencias </font color> <br><br> <font color="blue"> Docente: </font color> Celia Romero Pichardo <br><br> <font color="blue"> Alumno: </font color> Abril Pio Trujillo <br><br> <font color="blue"> N.L: </font color>31 <br><br> <font color="blue"> Grupo: </font color>402 <br><br> <font color="blue"> Carrera: </font color> Técnico en Programación </font size></strong> </font face></center></td>
+
+
+   <td width="200"> <font color="black" size="2" face="tahoma">
+<script type="text/javascript">
+    function greeting()
+{
+   var today = new Date();
+   var hrs = today.getHours();
+   document.writeln("<CENTER>");
+  // document.write("<H1>Buen");
+   if (hrs < 6)
+      document.write("");
+   else if (hrs < 12)
+      document.write("");
+   else if (hrs <= 18)
+      document.write("");
+   else
+      document.write("");
+   document.writeln("</H1>");
+   //document.write("Ingresaste a esta página el ");
+   dayStr = today.toLocaleString();
+   //document.write(dayStr);
+   document.writeln("</CENTER>");
+}
+function montharr(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11)
+{
+   this[0] = m0;
+   this[1] = m1;
+   this[2] = m2;
+   this[3] = m3;
+   this[4] = m4;
+   this[5] = m5;
+   this[6] = m6;
+   this[7] = m7;
+   this[8] = m8;
+   this[9] = m9;
+   this[10] = m10;
+   this[11] = m11;
+}
+function calendar()
+{
+   var monthNames = "EneFebMarAbrMayJunJulAgoSepOctNovDic";
+   var today = new Date();
+   var thisDay;
+   var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+   year = today.getYear() ;
+   thisDay = today.getDate();   
+   if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+   monthDays[1] = 29;
+   nDays = monthDays[today.getMonth()];
+   firstDay = today;
+   firstDay.setDate(1); // works fine for most systems
+   testMe = firstDay.getDate();
+   if (testMe == 2)
+   firstDay.setDate(0);    
+   startDay = firstDay.getDay();
+   document.writeln("<CENTER>");
+   document.write("<TABLE BORDER>");
+   document.write("<TR><TH COLSPAN=10>");
+   document.write(monthNames.substring(today.getMonth() * 3,
+   (today.getMonth() + 1) * 3));
+   document.write(". ");
+   document.write(year);
+   document.write("<TR><TH>D<TH>L<TH>M<TH>M<TH>J<TH>V<TH>S");
+   document.write("<TR>");
+   column = 0;
+   for (i=0; i<startDay; i++)
+   {
+   document.write("<TD>");
+   column++;
+   }
+   for (i=1; i<=nDays; i++)
+   {
+   document.write("<TD>");
+   if (i == thisDay)
+   document.write("<FONT COLOR=\"#FF0000\"><b>")
+   document.write(i);
+   if (i == thisDay)
+   document.write("</b></FONT>")
+   column++;
+   if (column == 7)
+   {
+   document.write("<TR>"); 
+   column = 0;
+   }
+   }
+   document.write("</TABLE>");
+   document.writeln("</CENTER>");
+}
+   greeting();
+   document.write("</br>");
+   calendar();
+   document.write("");
+   </script>
+
+
+
+<script>
+function limpiarCeldas(){
+<center>documet.getElementById("USUARIO:").innerText="";</center>
+documet.getElementById("CONTRASEÑA:").innerText="";
+}
+</script>
+
+<script>
+function usrpas(){
+if(document.form1.txt.value=="Abril" && document.form1.password.value=="1990")
+{window.location="menu.html"}
+else {alert("Error revise he intente de nuevo")}
+}
+document.oncontextmenu=new Fuction("return false");
+
+</script>
+
+<form name="form1">
+<center><strong><img src="us.png" widht="25" height="25">Usuario</center></strong><input type="text" name="txt" placeholder="usuario"><br></br>
+<center><strong><img src="pas.png" widht="25" height="25">Contraseña</center></strong><input type="password" name="password" placeholder="Contraseña"><br></br>
+<input type="button" value="Iniciar" onclick="usrpas()">
+<button onclick="limpiarCeldas()">Limpiar</button>
+
+</td></tr>
+</td>
+
+
+
+</tr>
+
+
+</tbody>
+</center></table>
+<h1></h1>
+
+<center><table border="0">
+<tr>
+<td><center><img src="Pie.png" widht="90" height="170"></center></td>
+</tr>
+</tbody>
+</center></table>
+<h1></h1>
+
+</body>
+</html>
