@@ -1,0 +1,88 @@
+<html>
+<head><title>Suma.html</title>
+</head>
+
+<center><img src="encabezado.png" widht="90" height="145"></center></head>
+
+<p><font color="black" size="4" face="Tahoma"><center>COLEGIO DE ESTUDIOS CIENTIFICOS Y TECNOLOGICOS DEL ESTADO DE MEXICO PLANTEL IXTLAHUACA</center></font></p>
+
+<p><font color="black" size="3" face="Tahoma"><center><strong>Elaborado por:</strong>Abril Pio Trujillo <strong>Fecha de Elaboracion:</strong>13 de Marzo de 2024<strong>Hora:</strong>7:47 a.m
+
+<p><font color="black" size="4" face="Tahoma"><center><strong>Suma de 2 numeros en HTML</strong></center><br>
+
+<script>
+function sumar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1+n2;
+}
+</script>
+
+<script>
+function restar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1-n2;
+}
+</script>
+
+<script>
+function dividir(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1/n2;
+}
+</script>
+
+<script>
+function multiplicar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1*n2;
+}
+</script>
+
+
+<body>
+<center><table width="1000" border="1">
+<form name="MyForm">
+<tr>
+<td width="200"><label>Dame el 1er Número:</label></td>
+<td width="200"><input type="text" name="txtNumero1"></td>
+<td width="100" rowspan="4"><img src="font.jpg" widht="200" height="180"></td>
+</tr>
+
+<tr>
+<td><label >Dame el 2do Número:</label></td>
+<td><input type="text" name="txtNumero2"></td>
+</tr>
+
+<tr>
+<td><label>Mostrar Resultado</label></td>
+<td><input type="text" name="txtResultado"></td>
+</tr>
+
+<tr>
+<td colspan="2" aling="center"><input type="button" value="SUMA" onclick="sumar()">
+<input type="button" value="RESTA" onclick="restar()">
+<input type="button" value="MULTIPLICACION" onclick="multiplicar()">
+<input type="button" value="DIVICION" onclick="dividir()"></td>
+</tr>
+
+</form>
+</table>
+</body>
+<center><br><table border="0" width="1200"</br></center></td>
+<center><table border="0" width="1200"></center>
+</tr>
+
+
+<center><strogn><font size="3"><font face="Book Antiqua"><font color="black">© 2024|Abril PIo Trujillo. Todos los derechos reservados    </font color></font face></font size></strong></center>
+<h1><center><strogn><font size="3"><font face="Book Antiqua"><font color="black"><a href=mailto:"https://wa.me/qr/3A6KOY5O2UURB1">WhatsApp|7121932709</a></font color></font face></font size></strong></center>
+<center><strogn><font size="3"><font face="Book Antiqua"><font color="black">Correo electronico|pabril748@gmail.com    </font color></font face></font size></strong></center>
+
+</body>
+</html>
+
+
+
